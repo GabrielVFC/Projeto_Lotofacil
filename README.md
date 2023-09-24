@@ -102,7 +102,7 @@ nele se usa a ação addActionlistener para fazer o clique.
 • Documentação:
 • https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextField.html
 
-• Essa classe serve para realizar a leitura de dados em cada aposta.
+• Essa classe serve para realizar a leitura de dados em cada aposta e também pode ser usada para imprimir uma mensagem ao usuário.
 
 • Documentação:
 • https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html

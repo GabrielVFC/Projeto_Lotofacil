@@ -8,6 +8,14 @@ import java.util.Random;
 
 import java.util.Scanner;
 
+import javax.swing.*;
+
+import java.awt.*;
+
+import java.awt.event.ActionEvent;
+
+import java.awt.event.ActionListener;
+
 **************************
 Regras de negócio/requisitos:
 
@@ -23,9 +31,9 @@ Menu LOTOFÁCIL:
 **************************
 ### Regras para a aposta de 0 a 100:
 
-• Utilizando a biblioteca Scanner, leia um número inteiro via teclado, de 0 a 100,
-caso o número seja maior que 100 ou menor que 0, imprima a mensagem: “Aposta
-inválida.”.
+• Quando o usuário escolher essa aposta, o programa vai ler um número inteiro 
+via teclado, de 0 a 100, caso o número seja maior que 100 ou menor que 0, 
+imprima a mensagem: “Aposta inválida.”.
 
 • Documentação:
 • https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
@@ -38,6 +46,8 @@ sistema.
 • Documentação:
 • https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
 
+• Quando o usuário iniciar o programa, irá aparecer uma janela onde o usuário,
+poderá escolher qual vai a aposta que ele vai fazer.
 
 • Caso o usuário acerte a aposta, imprima a mensagem “Você ganhou R$ 1.000,00
 reais.”. Caso o usuário erre, imprima a mensagem: “Que pena! O número sorteado
@@ -45,8 +55,8 @@ foi: X.”.
 
 ### Regras para a aposta de A à Z: 
 
-• Utilizando o método System.in.read(), leia um char via teclado, de A à Z, podendo
-ser lido como maiúsculo ou minúsculo. Caso não seja uma letra, imprima a
+• Quando o usuário escolher essa aposta, ele vai ter que digitar uma letra para 
+saber se ele consegue ganhar a aposta. Caso não seja uma letra, imprima a
 mensagem: “Aposta inválida.”. Você poderá utilizar o método Character.isLetter()
 para verificar se a entrada digitada é uma letra válida.
 
@@ -68,7 +78,8 @@ X.”.
 
 ### Regras para a aposta de número par ou ímpar:
 
-• Utilizando a biblioteca Scanner, leia um número inteiro via teclado. Exemplo: 600.
+• Quando o usuário escolher a opção de aposta um numero par ou impar, o programa 
+vai ler um número inteiro via teclado. Exemplo: 600.
 
 • Utilize o operador de módulo (%) para verificar se o número é par ou ímpar.
 
@@ -80,3 +91,20 @@ premiar jogadores que digitarem um número ímpar.
 • Se o número digitado for par, imprima a mensagem: “Você ganhou R$ 100,00
 reais.”. Caso o usuário digite um número ímpar, imprima a mensagem: “Que pena!
 O número digitado é ímpar e a premiação foi para números pares.”.
+
+
+• Documentação:
+• https://docs.oracle.com/javase/8/docs/api/javax/swing/JButton.html
+
+• A classe JButton ela cria um botão onde o usuário vai poder clicar para escolher a opção que deseja na aposta,
+nele se usa a ação addActionlistener para fazer o clique.
+
+• Documentação:
+• https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextField.html
+
+• Essa classe serve para realizar a leitura de dados em cada aposta.
+
+• Documentação:
+• https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html
+
+• Essa classe pode ser usada também para a leitura de dados e mostrar na tela o que foi escolhido para o usuário, alem de imprimir uma mensagem ao usuario.
